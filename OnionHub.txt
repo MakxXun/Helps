@@ -47,6 +47,9 @@ Credits.Text = "Credits"
 Credits.TextColor3 = Color3.new(0, 0, 0)
 Credits.TextSize = 22
 Credits.TextWrapped = true
+Credits.MouseButton1Click:Connect(function()
+    https://raw.githubusercontent.com/MakxXun/Helps/main/OnionHubCredit
+end)
 
 OnionHubLabel.Name = "OnionHubLabel"
 OnionHubLabel.Parent = Frame
