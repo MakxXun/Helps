@@ -91,5 +91,5 @@ Minimise.TextScaled = true
 Minimise.TextSize = 44
 Minimise.TextWrapped = true
 Minimise.MouseButton1Click:Connect(function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/MakxXun/Helps/main/OnionHubMinimised"))
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/MakxXun/Helps/main/OnionHubMinimised"))()
 end)
