@@ -68,6 +68,16 @@ Close.Text = "X"
 Close.TextColor3 = Color3.new(0, 0, 0)
 Close.TextSize = 22
 Close.TextWrapped = true
+Close.MouseButton1Click:Connect(function()
+    ScreenGui:Destroy()
+    Frame:Destroy()
+    Credits:Destroy()
+    OnionBasic:Destroy()
+    OnionHub:Destroy()
+    OnionHubLabel:Destroy()
+    OnionHubMinimised:Destroy()
+    Close:Destroy()
+end)
 
 Minimise.Name = "Minimise"
 Minimise.Parent = Frame
@@ -80,3 +90,6 @@ Minimise.TextColor3 = Color3.new(0, 0, 0)
 Minimise.TextScaled = true
 Minimise.TextSize = 44
 Minimise.TextWrapped = true
+Minimise.MouseButton1Click:Connect(function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/MakxXun/Helps/main/OnionHubMinimised"))
+end)
