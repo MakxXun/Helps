@@ -107,6 +107,7 @@ Minimise.TextSize = 14
 Minimise.TextWrapped = true
 Minimise.MouseButton1Click:Connect(function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/MakxXun/Helps/main/OnionHubMinimised"))()
+    OnionHub:Destroy()
 end)
 
 Basic.Name = "Basic"
