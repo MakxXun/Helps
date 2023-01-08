@@ -35,4 +35,5 @@ TextButton.TextSize = 14
 TextButton.TextWrapped = true
 TextButton.MouseButton1Click:Connect(function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/MakxXun/Helps/main/OnionHub.txt"))()
+    ScreenGui:Destroy()
 end)
