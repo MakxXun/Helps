@@ -1,98 +1,135 @@
-local ScreenGui = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
-local OnionBasic = Instance.new("TextButton")
-local OnionHubOriginal = Instance.new("TextButton")
-local Credits = Instance.new("TextButton")
-local OnionHubLabel = Instance.new("TextLabel")
+local OnionHub = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local TopBarBot = Instance.new("Frame")
+local TopBar = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
 local Close = Instance.new("TextButton")
+local Advanced = Instance.new("TextButton")
+local Original = Instance.new("TextButton")
 local Minimise = Instance.new("TextButton")
+local Basic = Instance.new("TextButton")
+local Expert = Instance.new("TextButton")
  
-ScreenGui.Parent = game.CoreGui
-ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+OnionHub.Name = "OnionHub"
+OnionHub.Parent = game.CoreGui
+OnionHub.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-Frame.Parent = ScreenGui
-Frame.BackgroundColor3 = Color3.new(0, 0, 0)
-Frame.Position = UDim2.new(0.347566187, 0, 0.124031007, 0)
-Frame.Size = UDim2.new(0, 583, 0, 281)
+Main.Name = "Main"
+Main.Parent = OnionHub
+Main.BackgroundColor3 = Color3.new(0, 0, 0)
+Main.Position = UDim2.new(0.328778833, 0, 0.23172906, 0)
+Main.Size = UDim2.new(0, 400, 0, 300)
+Main.ZIndex = 0
+Main.Draggable = true
+Main.Selectable = true
+Main.Active = true
 
-OnionBasic.Name = "OnionBasic"
-OnionBasic.Parent = Frame
-OnionBasic.BackgroundColor3 = Color3.new(0, 0, 1)
-OnionBasic.Position = UDim2.new(0.32933104, 0, 0.231316701, 0)
-OnionBasic.Size = UDim2.new(0, 199, 0, 45)
-OnionBasic.Font = Enum.Font.SourceSans
-OnionBasic.Text = "Load OnionHub Basic"
-OnionBasic.TextColor3 = Color3.new(0, 0, 0)
-OnionBasic.TextSize = 22
-OnionBasic.TextWrapped = true
+TopBarBot.Name = "TopBarBot"
+TopBarBot.Parent = Main
+TopBarBot.BackgroundColor3 = Color3.new(0, 0, 0.980392)
+TopBarBot.BorderColor3 = Color3.new(0.588235, 0.588235, 0.588235)
+TopBarBot.Position = UDim2.new(0, 0, 0.0700000003, 0)
+TopBarBot.Size = UDim2.new(0, 400, 0, 11)
+TopBarBot.ZIndex = 0
 
-OnionHubOriginal.Name = "OnionHubOriginal"
-OnionHubOriginal.Parent = Frame
-OnionHubOriginal.BackgroundColor3 = Color3.new(0, 0, 1)
-OnionHubOriginal.Position = UDim2.new(0.32933104, 0, 0.437722385, 0)
-OnionHubOriginal.Size = UDim2.new(0, 199, 0, 45)
-OnionHubOriginal.Font = Enum.Font.SourceSans
-OnionHubOriginal.Text = "Load OnionHub Original [Recommended]"
-OnionHubOriginal.TextColor3 = Color3.new(0, 0, 0)
-OnionHubOriginal.TextSize = 22
-OnionHubOriginal.TextWrapped = true
+TopBar.Name = "TopBar"
+TopBar.Parent = Main
+TopBar.BackgroundColor3 = Color3.new(0, 0, 0.980392)
+TopBar.Position = UDim2.new(0, 0, -0.0666666701, 20)
+TopBar.Size = UDim2.new(0, 400, 0, 32)
+TopBar.ZIndex = 0
 
-Credits.Name = "Credits"
-Credits.Parent = Frame
-Credits.BackgroundColor3 = Color3.new(0, 0, 1)
-Credits.Position = UDim2.new(0.32933104, 0, 0.651245475, 0)
-Credits.Size = UDim2.new(0, 199, 0, 45)
-Credits.Font = Enum.Font.SourceSans
-Credits.Text = "Credits"
-Credits.TextColor3 = Color3.new(0, 0, 0)
-Credits.TextSize = 22
-Credits.TextWrapped = true
-Credits.MouseButton1Click:Connect(function()
-    https://raw.githubusercontent.com/MakxXun/Helps/main/OnionHubCredit
-end)
-
-OnionHubLabel.Name = "OnionHubLabel"
-OnionHubLabel.Parent = Frame
-OnionHubLabel.BackgroundColor3 = Color3.new(1, 0, 0)
-OnionHubLabel.Position = UDim2.new(0.214408234, 0, 0, 0)
-OnionHubLabel.Size = UDim2.new(0, 333, 0, 50)
-OnionHubLabel.Font = Enum.Font.SourceSans
-OnionHubLabel.Text = "OnionHub Loader V1[Alpha Test]"
-OnionHubLabel.TextColor3 = Color3.new(0, 0, 0)
-OnionHubLabel.TextSize = 22
+TextLabel.Parent = TopBar
+TextLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel.BackgroundTransparency = 1
+TextLabel.Position = UDim2.new(-0.00249992381, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 203, 0, 32)
+TextLabel.ZIndex = 0
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "OnionHubV1 Loader"
+TextLabel.TextColor3 = Color3.new(1, 1, 1)
+TextLabel.TextSize = 23
+TextLabel.TextWrapped = true
 
 Close.Name = "Close"
-Close.Parent = Frame
-Close.BackgroundColor3 = Color3.new(0, 0, 1)
-Close.Position = UDim2.new(0.938250422, 0, 0.0355871916, 0)
-Close.Size = UDim2.new(0, 30, 0, 29)
+Close.Parent = Main
+Close.BackgroundColor3 = Color3.new(1, 0, 0)
+Close.Position = UDim2.new(0.922500014, 0, 0.0200000014, 0)
+Close.Size = UDim2.new(0, 22, 0, 20)
+Close.ZIndex = 0
 Close.Font = Enum.Font.SourceSans
 Close.Text = "X"
 Close.TextColor3 = Color3.new(0, 0, 0)
-Close.TextSize = 22
+Close.TextScaled = true
+Close.TextSize = 14
 Close.TextWrapped = true
 Close.MouseButton1Click:Connect(function()
-    ScreenGui:Destroy()
-    Frame:Destroy()
-    Credits:Destroy()
-    OnionBasic:Destroy()
-    OnionHub:Destroy()
-    OnionHubLabel:Destroy()
-    OnionHubMinimised:Destroy()
-    Close:Destroy()
+	OnionHub:Destroy()
 end)
 
+Advanced.Name = "Advanced"
+Advanced.Parent = Main
+Advanced.BackgroundColor3 = Color3.new(0, 0, 1)
+Advanced.Position = UDim2.new(0.25, 0, 0.556666613, 0)
+Advanced.Size = UDim2.new(0, 200, 0, 36)
+Advanced.ZIndex = 0
+Advanced.Font = Enum.Font.SourceSans
+Advanced.Text = "Load OnionHub Advanced[Requires Advanced Key]"
+Advanced.TextColor3 = Color3.new(0, 0, 0)
+Advanced.TextScaled = true
+Advanced.TextSize = 19
+Advanced.TextWrapped = true
+
+Original.Name = "Original"
+Original.Parent = Main
+Original.BackgroundColor3 = Color3.new(0, 0, 1)
+Original.Position = UDim2.new(0.25, 0, 0.396666646, 0)
+Original.Size = UDim2.new(0, 200, 0, 36)
+Original.ZIndex = 0
+Original.Font = Enum.Font.SourceSans
+Original.Text = "Load OnionHub Original [Recommended!]"
+Original.TextColor3 = Color3.new(0, 0, 0)
+Original.TextScaled = true
+Original.TextSize = 19
+Original.TextWrapped = true
+
 Minimise.Name = "Minimise"
-Minimise.Parent = Frame
-Minimise.BackgroundColor3 = Color3.new(0, 0, 1)
-Minimise.Position = UDim2.new(0.864493966, 0, 0.0355871916, 0)
-Minimise.Size = UDim2.new(0, 30, 0, 29)
+Minimise.Parent = Main
+Minimise.BackgroundColor3 = Color3.new(1, 0, 0)
+Minimise.Position = UDim2.new(0.847500026, 0, 0.0200000014, 0)
+Minimise.Size = UDim2.new(0, 22, 0, 20)
+Minimise.ZIndex = 0
 Minimise.Font = Enum.Font.SourceSans
-Minimise.Text = "-"
+Minimise.Text = "_"
 Minimise.TextColor3 = Color3.new(0, 0, 0)
 Minimise.TextScaled = true
-Minimise.TextSize = 44
+Minimise.TextSize = 14
 Minimise.TextWrapped = true
 Minimise.MouseButton1Click:Connect(function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/MakxXun/Helps/main/OnionHubMinimised"))()
 end)
+
+Basic.Name = "Basic"
+Basic.Parent = Main
+Basic.BackgroundColor3 = Color3.new(0, 0, 1)
+Basic.Position = UDim2.new(0.25, 0, 0.219999999, 0)
+Basic.Size = UDim2.new(0, 200, 0, 36)
+Basic.ZIndex = 0
+Basic.Font = Enum.Font.SourceSans
+Basic.Text = "Load OnionHub Basic"
+Basic.TextColor3 = Color3.new(0, 0, 0)
+Basic.TextSize = 23
+Basic.TextWrapped = true
+
+Expert.Name = "Expert"
+Expert.Parent = Main
+Expert.BackgroundColor3 = Color3.new(0, 0, 1)
+Expert.Position = UDim2.new(0.25, 0, 0.719999909, 0)
+Expert.Size = UDim2.new(0, 200, 0, 36)
+Expert.ZIndex = 0
+Expert.Font = Enum.Font.SourceSans
+Expert.Text = "Load OnionHub Expert[Purchased with crypto]"
+Expert.TextColor3 = Color3.new(0, 0, 0)
+Expert.TextScaled = true
+Expert.TextSize = 19
+Expert.TextWrapped = true
