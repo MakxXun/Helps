@@ -1,0 +1,99 @@
+local OnionHub = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local TopBarBot = Instance.new("Frame")
+local TopBar = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local Close = Instance.new("TextButton")
+local Advanced = Instance.new("TextButton")
+local Minimise = Instance.new("TextButton")
+local Expert = Instance.new("TextButton")
+ 
+OnionHub.Name = "OnionHub"
+OnionHub.Parent = game.CoreGui
+OnionHub.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main.Name = "Main"
+Main.Parent = OnionHub
+Main.BackgroundColor3 = Color3.new(0, 0, 0)
+Main.Position = UDim2.new(0.328778833, 0, 0.231729046, 0)
+Main.Size = UDim2.new(0, 400, 0, 179)
+Main.ZIndex = 0
+
+TopBarBot.Name = "TopBarBot"
+TopBarBot.Parent = Main
+TopBarBot.BackgroundColor3 = Color3.new(0, 0, 0.980392)
+TopBarBot.BorderColor3 = Color3.new(0.588235, 0.588235, 0.588235)
+TopBarBot.Position = UDim2.new(0, 0, 0.0700000003, 0)
+TopBarBot.Size = UDim2.new(0, 400, 0, 11)
+TopBarBot.ZIndex = 0
+
+TopBar.Name = "TopBar"
+TopBar.Parent = Main
+TopBar.BackgroundColor3 = Color3.new(0, 0, 0.980392)
+TopBar.Position = UDim2.new(0, 0, -0.128119186, 20)
+TopBar.Size = UDim2.new(0, 400, 0, 32)
+TopBar.ZIndex = 0
+
+TextLabel.Parent = TopBar
+TextLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel.BackgroundTransparency = 1
+TextLabel.Position = UDim2.new(-0.00249992381, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 203, 0, 32)
+TextLabel.ZIndex = 0
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "OnionHub PremiumV1 Loader"
+TextLabel.TextColor3 = Color3.new(1, 1, 1)
+TextLabel.TextSize = 23
+TextLabel.TextWrapped = true
+
+Close.Name = "Close"
+Close.Parent = Main
+Close.BackgroundColor3 = Color3.new(1, 0, 0)
+Close.Position = UDim2.new(0.922500014, 0, 0.0200000014, 0)
+Close.Size = UDim2.new(0, 22, 0, 20)
+Close.ZIndex = 0
+Close.Font = Enum.Font.SourceSans
+Close.Text = "X"
+Close.TextColor3 = Color3.new(0, 0, 0)
+Close.TextScaled = true
+Close.TextSize = 14
+Close.TextWrapped = true
+
+Advanced.Name = "Advanced"
+Advanced.Parent = Main
+Advanced.BackgroundColor3 = Color3.new(0, 0, 1)
+Advanced.Position = UDim2.new(0.264999986, 0, 0.640595853, 0)
+Advanced.Size = UDim2.new(0, 200, 0, 36)
+Advanced.ZIndex = 0
+Advanced.Font = Enum.Font.SourceSans
+Advanced.Text = "Load OnionHub Premium"
+Advanced.TextColor3 = Color3.new(0, 0, 0)
+Advanced.TextScaled = true
+Advanced.TextSize = 19
+Advanced.TextWrapped = true
+
+Minimise.Name = "Minimise"
+Minimise.Parent = Main
+Minimise.BackgroundColor3 = Color3.new(1, 0, 0)
+Minimise.Position = UDim2.new(0.847500026, 0, 0.0200000014, 0)
+Minimise.Size = UDim2.new(0, 22, 0, 20)
+Minimise.ZIndex = 0
+Minimise.Font = Enum.Font.SourceSans
+Minimise.Text = "_"
+Minimise.TextColor3 = Color3.new(0, 0, 0)
+Minimise.TextScaled = true
+Minimise.TextSize = 14
+Minimise.TextWrapped = true
+
+Expert.Name = "Expert"
+Expert.Parent = Main
+Expert.BackgroundColor3 = Color3.new(0, 0, 1)
+Expert.Position = UDim2.new(0.264999986, 0, 0.34309113, 0)
+Expert.Size = UDim2.new(0, 200, 0, 36)
+Expert.ZIndex = 0
+Expert.Font = Enum.Font.SourceSans
+Expert.Text = "Load OnionHub Expert[Purchased with crypto]"
+Expert.TextColor3 = Color3.new(0, 0, 0)
+Expert.TextScaled = true
+Expert.TextSize = 19
+Expert.TextWrapped = true
