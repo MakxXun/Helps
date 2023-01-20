@@ -1,0 +1,27 @@
+_G.Keys = {
+    "V1",
+    "V2",
+    "V3"
+}
+_G.Users = {
+    "V4",
+    "V5",
+    "V6"
+}
+if (getgenv().Key and _G.Keys and getgenv().Username and _G.Users) then
+    for i,v in pairs(_G.Users) do
+        if (v == getgenv().Username) then
+            for i,v in pairs(_G.Keys) do
+                if (v == getgenv().Key) then
+                    loadstring(game:HttpGet("https://raw.githubusercontent.com/MakxXun/Helps/main/OnionHubPremium"))()
+                else
+                   loadstring(game:HttpGet("https://raw.githubusercontent.com/MakxXun/Helps/main/OnionHub.txt"))()
+                end
+            end
+        else
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/MakxXun/Helps/main/OnionHub.txt"))()
+        end
+    end
+else
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/MakxXun/Helps/main/OnionHub.txt"))()
+end
